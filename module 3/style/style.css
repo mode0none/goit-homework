@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before
+*::after{
+    box-sizing: inherits;
+}
+
+font-family: 'Playfair Display', serif;
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+.nav a:hover,
+.nav a:focus{
+    color: red
+}
+
+.head-button{
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    width: 1200px;
+}
+.head-button li {
+    list-style-type: none;
+    display: inline-block;
+}
+.head-button a {
+    text-decoration: none;
+}
+
+
+.head-button li:not(:last-child) {
+    margin-right: 120px;
+}
+
+
+.kardt {
+    width:900px;
+    margin: 0 auto;
+}
+
+.van {
+    display: inline-block;
+}
