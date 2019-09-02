@@ -1,50 +1,129 @@
-html {
+html{
     box-sizing: border-box;
-}
-*,
-*::before
-*::after{
-    box-sizing: inherits;
-}
-
-font-family: 'Playfair Display', serif;
-
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-} 
-
-.nav a:hover,
-.nav a:focus{
-    color: red
-}
-
-.head-button{
-    font-size: 14px;
-    margin: 0;
-    text-align: center;
-    width: 1200px;
-}
-.head-button li {
-    list-style-type: none;
-    display: inline-block;
-}
-.head-button a {
-    text-decoration: none;
-}
-
-
-.head-button li:not(:last-child) {
-    margin-right: 120px;
-}
-
-
-.kardt {
-    width:900px;
-    margin: 0 auto;
-}
-
-.van {
-    display: inline-block;
-}
+    }
+    
+    
+    *,
+    *::before,
+    *::after{
+        box-sizing: inherit
+    }
+    
+    body{
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        color: #626262;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .container{
+        width: 900px;
+        margin: 0 auto;
+        /* background-color: gold; */
+    }
+    
+    header{
+        width: 100%;
+        padding-top: 77px;
+        padding-bottom: 100px;
+    }
+    
+    p,
+    h2{
+        margin: 0;
+    }
+    
+    
+    .site-navigation {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0px;
+    }
+    
+    .site-navigation li{
+        display: inline-block;
+    }
+    
+    .site-navigation:nth-child(1n){
+        text-align: center;
+    }
+    .site-navigation li:not(:last-child){
+    margin-right: 90px;
+    }
+    .site-navigation a{
+        display: block;
+        color: #626262;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 24px;
+    }
+    
+    .site-navigation a:hover{
+        color: #03a9f4;
+    }
+    
+    .top{
+        display: inline-block;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img{
+        margin-bottom: 30px;
+    }
+    
+    .item{
+        display: inline-block;
+        width: 420px;
+        margin-bottom: 135px;
+    }
+    
+    .item h2{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-bottom: 44px;
+    }
+    
+    .theme{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        color:#b4ad9e;
+        text-transform: uppercase;
+        line-height: 17px;
+        margin-bottom: 30px;
+    }
+    
+    .content{
+        font-size: 14px;
+    }
+    
+    .item:nth-child(odd){
+        margin-right: 56px;
+    }
+    
+    
+    .item:nth-child(n+5){
+        margin-bottom: 54px;
+    }
+    
+    .button {
+        display: block;
+        margin: auto;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: #626262;
+        font-weight: 500;
+        text-decoration: none;
+        background: none;
+        padding: .5em 2em;
+        outline: none;
+        border: 2px solid;
+        border-radius: 1px;
+        border-color: #626262;
+        cursor: pointer;
+    } 
