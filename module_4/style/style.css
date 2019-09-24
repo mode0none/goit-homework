@@ -3,6 +3,7 @@ html {
 }
 body {
     font-family: Open Sans, sans-serif;
+    margin: 0px;
 }
 
 .clearfix::after {
@@ -27,12 +28,13 @@ h1,h2,h3,h4,h5,p {
 .container{ 
     width: 1110px;
     margin: o auto;
-    float: none;
 }
 
 .header {
     width: 1110px;
     margin: 38px auto 0 auto;
+    padding-top: 43px;
+    /* padding-bottom: 112px; */
 }
 
 .main {
@@ -41,7 +43,7 @@ h1,h2,h3,h4,h5,p {
 }
 
 .header-logo{
-    float: left;
+    /* float: left; */
 }
 
 .header-nav{
@@ -59,11 +61,12 @@ h1,h2,h3,h4,h5,p {
 }
 
 .nav-link{
+    float: left;
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     color: #0f0101;
     font-weight: 700;
-
 }
 
 .nav-item:not(:last-child)  {
@@ -75,6 +78,7 @@ h1,h2,h3,h4,h5,p {
 }
 
 .main-title {
+    padding-top: 110px;
     font-family: Roboto, sans-serif;
     color: #515151;
     text-transform: uppercase;
@@ -82,7 +86,7 @@ h1,h2,h3,h4,h5,p {
     font-weight: 900;
     text-align: center;
     margin: 0 auto;
-    margin: 110px auto 0 auto;
+    /* margin: 110px auto 0 auto; */
 }
 
 .main-title::after {
@@ -170,7 +174,7 @@ h1,h2,h3,h4,h5,p {
 
 .news-item > h3 {
     font-family: Open Sans, sans-serif;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     color: #555252;
     font-size: 18px;
 }
@@ -197,8 +201,14 @@ h1,h2,h3,h4,h5,p {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    padding: 20px 40px;
+    /* margin-top: 20px; */
     font-family: Open Sans, sans-serif;
     font-weight: 400;
     font-size: 16px;
+}
+
+.news-button:hover {
+    background-color: coral;
+    cursor: pointer;
 }
