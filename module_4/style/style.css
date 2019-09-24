@@ -32,9 +32,10 @@ h1,h2,h3,h4,h5,p {
 
 .header {
     width: 1110px;
-    margin: 38px auto 0 auto;
-    /* padding-top: 43px; */
-    /* padding-bottom: 112px; */
+    /* margin: 38px auto 0 auto; */
+    /* padding: 38px auto 0 auto; */
+    padding-top: 38px;
+    margin: 0 auto;
 }
 
 .main {
@@ -87,6 +88,7 @@ h1,h2,h3,h4,h5,p {
     text-align: center;
     margin: 0 auto;
     /* margin: 110px auto 0 auto; */
+    margin-bottom: 110px;
 }
 
 .main-title::after {
@@ -162,8 +164,8 @@ h1,h2,h3,h4,h5,p {
 }
 
 .news-item {
-    margin-top: 110px;
-    margin-bottom: 45px;
+    /* margin-top: 110px;
+    margin-bottom: 45px; */
     float: left;
     width: 350px;
 }
@@ -225,4 +227,8 @@ h1,h2,h3,h4,h5,p {
 .button:hover {
     background-color: coral;
     cursor: pointer;
+}
+
+.main-size {
+    margin-bottom: 45px;
 }
