@@ -1,0 +1,194 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.header {
+    padding-top: 20px;
+    width: 100%;
+    height: 540px;
+    background-image: url(../images/logo/homework-08_Desktop_01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar {
+    flex-direction: column;
+    text-align: center;
+}
+.navbar-brand {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 0;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.nav {
+    margin-bottom: 120px;
+}
+.nav-link {
+    width: 100%;
+    padding: 5px 17px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all .2s linear;
+    color: #ffffff;
+}
+.nav-link:hover {
+    border-color: #ffffff;
+    color: #fff;
+}
+.intro__inner {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 320px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.display-1 {
+    font-size: 30px;
+    color: #fff;
+}
+.lead {
+    max-width: 220px;
+    margin: 0 auto  12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*btn*/
+.btn__inner {
+    margin: 0 auto;
+}
+.btn {
+    width: 270px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 1.8;
+    background-color: #ff4e50;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 30px;
+}
+.btn--team {
+    background: #fff;
+    border: #ff4e50 2px solid;
+    color: #ff4e50;
+}
+
+/*section*/
+.section {
+    padding: 70px 0 60px;
+    text-align: center;
+}
+.display-2 {
+    font-size: 22px;
+    max-width: 270px;
+    margin: 0 auto 25px;
+}
+.display-3 {
+    font-size: 14px;
+    color: #333333;
+}
+.lead--info {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 270px;
+    margin: 0 auto 24px;
+    color: #747474;
+}
+.photo {
+    border-radius: 50%;
+}
+.order-first {
+    order: 0;
+}
+.team__img {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin: 0 auto 20px;
+}
+.team__img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tv::after {
+    background-color: #ff4e50;
+    background-image: url(../images/icon/1.png);
+}
+.lab::after{
+    background-color: #ffa507;
+    background-image: url(../images/icon/2.png);
+}
+.tea::after {
+    background-color: #1cd7ad;
+    background-image: url(../images/icon/3.png);
+}
+.plane::after {
+    background-color: #4e73db;
+    background-image: url(../images/icon/4.png);
+}
+
+@media (min-width: 768px) {
+
+    .header {
+        padding-top: 40px;
+        height: 700px;
+    }
+    .intro__inner {
+        max-width: 510px;
+    }
+    .display-1 {
+        font-size: 52px;
+        margin-bottom: 30px;
+    }
+    .display-2 {
+        max-width: 385px;
+    }
+    .lead {
+        max-width: 400px;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .lead--info {
+        font-size: 14px;
+    }
+    .nav {
+        margin-bottom: 0;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: inherit;
+        margin-bottom: 150px;
+    }
+    .navbar-brand {
+        padding-top: 0;
+    }
+    .order-first {
+        order: -1;
+    }
+    .order-1 {
+        order: 0;
+    }
+    .btn {
+        width: 230px;
+    }
+    .btn--team {
+        width: 190px;
+    }
+}
